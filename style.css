@@ -1,1 +1,281 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Poppins:wght@800&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.navbar-one {
+  display: none;
+  justify-content: flex-end;
+  background-color: #1c1f23;
+  gap: 20px;
+  padding: 10px;
+}
+
+.nav-item {
+  color: #fff;
+  text-decoration: none;
+  transition: 1s;
+}
+
+.nav-item:hover {
+  transform: scale(1.2);
+  color: #ec6e42;
+}
+
+/* Second Nav Bar */
+.navbar-two {
+  background-color: #eee;
+}
+
+.humburger {
+  width: 90px;
+  height: 70px;
+  padding: 10px;
+}
+
+.icon-bar {
+  display: block;
+  margin: 6px auto;
+  height: 8px;
+  width: 50px;
+  color: #272a31;
+  background-color: #272a31;
+}
+
+#header-logo {
+  display: none;
+}
+
+#myNavbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#myNavbar.active {
+  display: none;
+}
+
+.link {
+  padding: 5px;
+  font-size: 28px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: 1s;
+  color: #272a31;
+}
+
+.link:hover {
+  transform: scale(1.2);
+  color: #ec5242;
+}
+
+#campaign {
+  border: 2px solid #ec5242;
+  color: #ec5242;
+  padding: 10px;
+}
+
+/* ############################################# MAIN SECTION ####################################### */
+
+.landing-page-section {
+  background: #eee;
+  background-image: url('./img/landingPage.jpg');
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.greetings {
+  padding-top: 30px;
+  padding-left: 16px;
+  margin-bottom: 12px;
+  color: #f83b26;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.landing-page-header {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  font-size: 52px;
+  line-height: 48px;
+  background-image: url(./img/red-background-17.png);
+  background-size: cover;
+  padding: 16px;
+  -webkit-background-clip: text;
+  color: #ec5242;
+  -webkit-text-fill-color: transparent;
+}
+
+.landing-page-para {
+  margin-top: 20px;
+  padding: 16px;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+h2 {
+  padding: 16px 16px 0px 16px;
+  font-size: 36px;
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+  color: #393c42;
+}
+
+.location {
+  padding: 0px 16px 60px 16px;
+  font-size: 22px;
+  color: #393c42;
+}
+
+/* ############################################# ACTIVITY SECTION ####################################### */
+
+.activities {
+  background: #272a31;
+  background-image: url(./img/main-section.jpg);
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.activities-header {
+  color: #fff;
+  font-size: 26px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.activities-header::before {
+  content: '';
+  position: absolute;
+  border: 2px solid #f83b26;
+  width: 75px;
+  bottom: 0px;
+  left: 43%;
+}
+
+.row {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 15px;
+  padding: 40px;
+}
+
+.col-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-color: #3c414b;
+  padding: 40px;
+}
+
+h3 {
+  color: hsl(11deg 89% 54%);
+  font-size: 24px;
+  font-weight: 700;
+  text-shadow: 1px 1px hsl(0deg 0% 13%);
+}
+
+.col-row p {
+  color: #fff;
+  font-size: 18px;
+}
+
+.join-summit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.join {
+  padding: 28px;
+  font-size: 22px;
+  color: #fff;
+  background-color: #f83b26;
+  border: none;
+  margin-bottom: 36px;
+}
+
+.see-program {
+  display: none;
+}
+
+/* ############################################# SPEAKER SECTION ####################################### */
+
+.speakers-header {
+  text-align: center;
+  font-weight: 100;
+  position: relative;
+  padding-bottom: 16px;
+}
+
+.speakers-header::before {
+  content: '';
+  position: absolute;
+  border: 2px solid #f83b26;
+  width: 75px;
+  bottom: 0px;
+  left: 43%;
+}
+
+.speakers-grid-container {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 20px;
+  padding: 28px;
+}
+
+.col {
+  display: flex;
+  padding: 12px;
+  gap: 15px;
+  box-shadow: 2px 0px 1px 2px lightgrey;
+  transition: 1s;
+}
+
+.col:hover {
+  transform: scale(1.1);
+}
+
+.profile {
+  padding: 10px;
+  line-height: 33px;
+}
+
+.name-of-speaker {
+  color: #272a31;
+  text-shadow: none;
+}
+
+.persona {
+  color: #f83b26;
+  margin-bottom: 16px;
+}
+
+footer {
+  display: none;
+}
+
+
+/* ############################################# DESKTOP VERSION BEGINS ####################################### */
+
+@media (min-width: 768px) {
+  .navbar-one {
+    display: flex;
+  }
+
+
+}
