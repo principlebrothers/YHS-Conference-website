@@ -1,56 +1,32 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Project Name: YOUTH HOPE SUMMIT WEBSITE
 
-> Description the project.
+> Description the project: This project is a website for Youth Hope Summit. It container infomation about their upcoming yearly summit and snippet from previous summit. The project is a capstone project for module of of Microverse training program.
 
 
 ## Built With
 
 - Major languages
+> Html
+> Css
+> JavaScript
 - Frameworks
-- Technologies used
+> Bootstrap
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://principlebrothers.github.io/Capstone-Project-One/about.html)
 
+[Video of Features Explained](https://www.loom.com/share/752b3aecea94434c987f272036c7def6)
 
-## Getting Started
+## Author
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+👤 **Ernest Anyewe Adonu**
 
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@principlebrothers](https://github.com/principlebrothers)
+- Twitter: [@adonu_ernest](https://twitter.com/adonu_ernest)
+- LinkedIn: [Ernest Anyewe Adonu](www.linkedin.com/in/ernest-adonu-7b61951b0)
 
 ## 🤝 Contributing
 
@@ -65,7 +41,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to anyone whose code was used
-- Inspiration
+- Inspiration from: [Cindy Shin in Behance](https://www.behance.net/adagio07)
 - etc
 
 ## 📝 License
