@@ -403,6 +403,22 @@ footer {
   padding-left: 10px;
 }
 
+/* ############################################# EXTRA SMALL DEVICES (PHONE, 430px and down)####################################### */
+
+@media only screen and (max-width: 430px) {
+  .col-row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .col {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 /* ############################################# DESKTOP VERSION BEGINS ####################################### */
 
 @media (min-width: 768px) {
