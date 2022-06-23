@@ -55,7 +55,7 @@ body {
   display: none;
 }
 
-#myNavbar {
+#myNavbar.active {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,7 +63,7 @@ body {
   gap: 20px;
 }
 
-#myNavbar.active {
+#myNavbar {
   display: none;
 }
 
@@ -105,7 +105,7 @@ body {
   font-weight: 600;
 }
 
-.landing-page-header {
+h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: bolder;
   font-size: 52px;
@@ -247,7 +247,7 @@ h3 {
 }
 
 .col:hover {
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
 
 .profile {
@@ -269,12 +269,264 @@ footer {
   display: none;
 }
 
+/* ############################################# ABOUT SECTION ####################################### */
+
+.about-container {
+  background: #eee;
+  background-image: url('./img/landingPage.jpg');
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+#about-greetings {
+  text-align: center;
+}
+
+.about-h1 {
+  text-align: center;
+}
+
+.program-description {
+  padding: 16px;
+  text-align: center;
+}
+
+.detail-description {
+  line-height: 36px;
+  margin-bottom: 42px;
+  background-color: #fff;
+  padding: 16px;
+  box-shadow: 2px 0px 1px 2px lightgrey;
+}
+
+#email-link {
+  border-bottom: 2px solid #272a31;
+}
+
+.past-events {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.past-event-header {
+  text-align: center;
+  padding-bottom: 18px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.past-event-header::before {
+  content: '';
+  position: absolute;
+  border: 2px solid #f83b26;
+  width: 75px;
+  bottom: 0px;
+  left: 45%;
+}
+
+.past-event-para {
+  font-size: 20px;
+  margin-bottom: 35px;
+}
+
+.event-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 38px;
+  flex-direction: column;
+  margin-bottom: 48px;
+}
+
+.video,
+.image-21 {
+  transition: 1s;
+}
+
+.video:hover,
+.image-21:hover {
+  transform: scale(1.2);
+}
+
+/* ############################################# ABOUT FOOTER ####################################### */
+#about-footer {
+  display: block;
+}
+
+.partner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #272a31;
+  padding: 48px;
+}
+
+.footer-header {
+  color: #fff;
+  font-size: 36px;
+  text-shadow: none;
+  padding-bottom: 16px;
+  position: relative;
+}
+
+.footer-header::before {
+  content: '';
+  position: absolute;
+  border: 2px solid #f83b26;
+  width: 75px;
+  bottom: 0px;
+  left: 22%;
+}
+
+.partner-logo img {
+  padding: 16px;
+}
+
+.footer-logo-and-copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 16px;
+  background-color: #eee;
+}
+
+.ft-logo:hover {
+  transition: 1s;
+  transform: scale(1.2);
+}
+
+.footer-logo-and-copyright p {
+  padding-left: 10px;
+}
 
 /* ############################################# DESKTOP VERSION BEGINS ####################################### */
 
 @media (min-width: 768px) {
   .navbar-one {
     display: flex;
+  }
+
+  /* Second Nav section */
+  .navbar-two {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 16px;
+  }
+
+  .humburger {
+    display: none;
+  }
+
+  #header-logo {
+    display: flex;
+    transition: 1s;
+  }
+
+  #header-logo:hover {
+    transform: scale(1.2);
+  }
+
+  #myNavbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+
+  /* main program */
+
+  .activities-header::before {
+    left: 47%;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 15px;
+    padding: 40px;
+  }
+
+  .col-row {
+    flex-direction: column;
+  }
+
+  .join {
+    display: none;
+  }
+
+  .see-program {
+    display: flex;
+    padding: 28px;
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 36px;
+  }
+
+  /* Speaker Section */
+  .speakers-header::before {
+    left: 46%;
+  }
+
+  .speakers-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 52px;
+    padding: 28px;
+  }
+
+  .col:hover {
+    transform: scale(1.1);
+  }
+
+  footer {
+    display: block;
+  }
+
+  #footer-text {
+    transition-property: text;
+
+  }
+
+  #footer-text:hover {
+    transition-timing-function: ease-in-out;
+    transition-delay: 1s;
+    transition-duration: .3s;
+    font-size: 20px;
+    transform: scale(1.1);
+  }
+
+  /* About section */
+  .program-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .detail-description {
+    max-width: 49rem;
+  }
+
+  .event-media {
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  /* Footer Section */
+  #partners {
+    display: none;
+  }
+
+  #about-flac {
+    background-color: #272a31;
+    color: #fff;
   }
 
 

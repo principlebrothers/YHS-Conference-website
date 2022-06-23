@@ -6,7 +6,7 @@ toggleBtn.addEventListener('click', () => {
   links.classList.toggle('active');
 });
 
-link.forEach((n) => n.addEventListener('click', () => {
+link.forEach((link) => link.addEventListener('click', () => {
   links.classList.remove('active');
 }));
 
