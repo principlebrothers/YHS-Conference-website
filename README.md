@@ -16,7 +16,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com](https://principlebrothers.github.io/Capstone-Project-One/about.html)
+[Live Demo Link](https://principlebrothers.github.io/Capstone-Project-One/about.html)
 
 ## Author
 
