@@ -18,6 +18,8 @@
 
 [Live Demo Link](https://principlebrothers.github.io/Capstone-Project-One/about.html)
 
+[Video of Features Explained](https://www.loom.com/share/752b3aecea94434c987f272036c7def6)
+
 ## Author
 
 👤 **Ernest Anyewe Adonu**
