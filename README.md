@@ -14,7 +14,7 @@
 - Frameworks
 > Bootstrap
 
-## Live Demo (if available)
+## Live Demo
 
 [Live Demo Link](https://principlebrothers.github.io/Capstone-Project-One/about.html)
 
