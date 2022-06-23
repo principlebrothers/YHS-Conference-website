@@ -12,7 +12,7 @@ link.forEach((link) => link.addEventListener('click', () => {
 
 const speakers = [
   {
-    class: "eric-img",
+    class: 'eric-img',
     name: 'Apostle Eric Nyamekye',
     personality: 'Chairman of the Church of Pentecost',
     image: './img/Apostle-Eric.jpg',
@@ -20,7 +20,7 @@ const speakers = [
     description: 'He has worked with the youth for 20 decade. He holds a doctrate degree in theology.',
   },
   {
-    class: "prince-img",
+    class: 'prince-img',
     name: 'Elder Prince Adjei',
     personality: 'Elder of the Church of Pentecost',
     image: './img/Elder-Prince.png',
@@ -28,7 +28,7 @@ const speakers = [
     description: 'He has great knowledge in family life and as he is an internationally aclaimed speaker',
   },
   {
-    class: "justice-img",
+    class: 'justice-img',
     name: 'Prophet Justice Lemawu',
     personality: 'Doctor in Divinity',
     image: './img/Prophet-Justice.png',
@@ -36,7 +36,7 @@ const speakers = [
     description: 'He is the senior Presbyter of Christ Cosmopolitan, a church he founded whiles studying at the KTU, where he rose to fame.',
   },
   {
-    class: "ernest-img",
+    class: 'ernest-img',
     name: 'Ernest Anyewe Adonu',
     personality: 'Author of some of best-selling books and a Counsellor',
     image: './img/Ernest.png',
@@ -44,7 +44,7 @@ const speakers = [
     description: 'He he an internationally acclaimed speaker, author, Counsellor and Life coach.',
   },
   {
-    class: "abel-img",
+    class: 'abel-img',
     name: 'Dr. Abel Damina',
     personality: 'Pastor of Power City International and a prolific author',
     image: './img/Abel-Damina.png',
@@ -52,7 +52,7 @@ const speakers = [
     description: 'Dr. Abel has won so many awards of ecclesiastical excellence around the world. He is also a writer with so many wonderful books to his credit',
   },
   {
-    class: "chris-img",
+    class: 'chris-img',
     name: 'Pastor Chris Oyakhilome',
     personality: 'Pastor of Christ Embassy, a Counsellor and an Author',
     image: './img/Pastor-Chris.jpg',
