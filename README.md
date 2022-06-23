@@ -2,7 +2,7 @@
 
 # Project Name: YOUTH HOPE SUMMIT WEBSITE
 
-> Description the project: This project is a website for Youth Hope Summit. It container infomation about their upcoming yearly summit and snippet from previous summit.
+> Description the project: This project is a website for Youth Hope Summit. It container infomation about their upcoming yearly summit and snippet from previous summit. The project is a capstone project for module of of Microverse training program.
 
 
 ## Built With
@@ -16,7 +16,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://livedemo.com](https://principlebrothers.github.io/Capstone-Project-One/about.html)
 
 ## Author
 
