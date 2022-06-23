@@ -341,14 +341,15 @@ footer {
 }
 
 .video,
-.image-21 {
+.video-2 {
   transition: 1s;
 }
 
 .video:hover,
-.image-21:hover {
-  transform: scale(1.2);
+.video-2:hover {
+  transform: scale(1.1);
 }
+
 
 /* ############################################# ABOUT FOOTER ####################################### */
 #about-footer {
