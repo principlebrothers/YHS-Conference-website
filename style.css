@@ -126,7 +126,7 @@ h1 {
 }
 
 h2 {
-  padding: 16px 16px 0px 16px;
+  padding: 16px 16px 0 16px;
   font-size: 36px;
   font-weight: 800;
   font-family: 'Poppins', sans-serif;
@@ -134,7 +134,7 @@ h2 {
 }
 
 .location {
-  padding: 0px 16px 60px 16px;
+  padding: 0 16px 60px 16px;
   font-size: 22px;
   color: #393c42;
 }
@@ -161,7 +161,7 @@ h2 {
   position: absolute;
   border: 2px solid #f83b26;
   width: 75px;
-  bottom: 0px;
+  bottom: 0;
   left: 43%;
 }
 
@@ -227,7 +227,7 @@ h3 {
   position: absolute;
   border: 2px solid #f83b26;
   width: 75px;
-  bottom: 0px;
+  bottom: 0;
   left: 43%;
 }
 
@@ -242,7 +242,7 @@ h3 {
   display: flex;
   padding: 12px;
   gap: 15px;
-  box-shadow: 2px 0px 1px 2px lightgrey;
+  box-shadow: 2px 0 1px 2px lightgrey;
   transition: 1s;
 }
 
@@ -296,7 +296,7 @@ footer {
   margin-bottom: 42px;
   background-color: #fff;
   padding: 16px;
-  box-shadow: 2px 0px 1px 2px lightgrey;
+  box-shadow: 2px 0 1px 2px lightgrey;
 }
 
 #email-link {
@@ -322,7 +322,7 @@ footer {
   position: absolute;
   border: 2px solid #f83b26;
   width: 75px;
-  bottom: 0px;
+  bottom: 0;
   left: 45%;
 }
 
@@ -378,7 +378,7 @@ footer {
   position: absolute;
   border: 2px solid #f83b26;
   width: 75px;
-  bottom: 0px;
+  bottom: 0;
   left: 22%;
 }
 
@@ -492,13 +492,12 @@ footer {
 
   #footer-text {
     transition-property: text;
-
   }
 
   #footer-text:hover {
     transition-timing-function: ease-in-out;
     transition-delay: 1s;
-    transition-duration: .3s;
+    transition-duration: 0.3s;
     font-size: 20px;
     transform: scale(1.1);
   }
@@ -529,6 +528,4 @@ footer {
     background-color: #272a31;
     color: #fff;
   }
-
-
 }
