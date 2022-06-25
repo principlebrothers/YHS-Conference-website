@@ -10,7 +10,7 @@ link.forEach((link) => link.addEventListener('click', () => {
   links.classList.remove('active');
 }));
 
-// ######################################### OBJECT ARRAY FOR THE SPEAKERS ###################################
+// ######################### OBJECT ARRAY FOR THE SPEAKERS #####################
 
 const speakers = [
   {
@@ -63,7 +63,7 @@ const speakers = [
   },
 ];
 
-// ######################################### FUNCTION FOR CREATING EACH SPEAKER ###################################
+// ####################### FUNCTION FOR CREATING EACH SPEAKER #######################
 const speakersContainer = document.querySelector('.speakers-grid-container');
 
 function createSpeakers() {
@@ -82,12 +82,12 @@ function createSpeakers() {
           </div>
         </div>
       </div>`;
-  })
+  });
 }
 
 createSpeakers();
 
-// ######################################### CREATING THE MORE FUNCTION ###################################
+// ########################## CREATING THE MORE FUNCTION ########################
 
 function createMoreBtn() {
   const divForMore = document.createElement('div');
@@ -95,18 +95,17 @@ function createMoreBtn() {
   divForMore.innerHTML = 'More  &#129051';
   divForMore.style.color = '#929eaa';
   divForMore.style.border = '2px solid #929eaa';
-  divForMore.style.fontSize = '22px'
+  divForMore.style.fontSize = '22px';
   divForMore.style.textAlign = 'center';
   divForMore.style.cursor = 'pointer';
-  speakersContainer.insertAdjacentElement("afterend", divForMore);
+  speakersContainer.insertAdjacentElement('afterend', divForMore);
 
   const speakerCards = document.querySelectorAll('.speakers-card');
-  const moreBtn = document.querySelector('more');
   speakerCards.forEach((speakerCard, index) => {
     if (index > 1) {
       speakerCard.classList.add('hide');
     }
-  })
+  });
 
   function moreOrLess(speakerCard) {
     if (speakerCard.classList.contains('hide')) {
@@ -118,7 +117,7 @@ function createMoreBtn() {
       divForMore.style.color = '#f83b26';
       divForMore.style.border = '2px solid #f83b26';
     }
-  };
+  }
 
   divForMore.addEventListener('click', () => {
     speakerCards.forEach((speakerCard, index) => {
@@ -126,9 +125,8 @@ function createMoreBtn() {
         speakerCard.classList.toggle('hide');
         moreOrLess(speakerCard);
       }
-    })
-  })
-
+    });
+  });
 }
 
-createMoreBtn()
+createMoreBtn();
