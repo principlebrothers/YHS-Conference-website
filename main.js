@@ -10,6 +10,8 @@ link.forEach((link) => link.addEventListener('click', () => {
   links.classList.remove('active');
 }));
 
+// ######################################### OBJECT ARRAY FOR THE SPEAKERS ###################################
+
 const speakers = [
   {
     class: 'eric-img',
@@ -61,13 +63,11 @@ const speakers = [
   },
 ];
 
+// ######################################### FUNCTION FOR CREATING EACH SPEAKER ###################################
 const speakersContainer = document.querySelector('.speakers-grid-container');
 
 function createSpeakers() {
-  const len = speakers.length;
-  for (let i = 0; i < len; i += 1) {
-    const speaker = speakers[i];
-
+  speakers.forEach((speaker) => {
     speakersContainer.innerHTML += `
       <div class="speakers-card">
         <div class="col-1 col">
@@ -82,7 +82,53 @@ function createSpeakers() {
           </div>
         </div>
       </div>`;
-  }
+  })
 }
 
 createSpeakers();
+
+// ######################################### CREATING THE MORE FUNCTION ###################################
+
+function createMoreBtn() {
+  const divForMore = document.createElement('div');
+  divForMore.classList.add('more');
+  divForMore.innerHTML = 'More  &#129051';
+  divForMore.style.color = '#929eaa';
+  divForMore.style.border = '2px solid #929eaa';
+  divForMore.style.fontSize = '22px'
+  divForMore.style.textAlign = 'center';
+  divForMore.style.cursor = 'pointer';
+  speakersContainer.insertAdjacentElement("afterend", divForMore);
+
+  const speakerCards = document.querySelectorAll('.speakers-card');
+  const moreBtn = document.querySelector('more');
+  speakerCards.forEach((speakerCard, index) => {
+    if (index > 1) {
+      speakerCard.classList.add('hide');
+    }
+  })
+
+  function moreOrLess(speakerCard) {
+    if (speakerCard.classList.contains('hide')) {
+      divForMore.innerHTML = 'More  &#129051';
+      divForMore.style.color = '#929eaa';
+      divForMore.style.border = '2px solid #929eaa';
+    } else {
+      divForMore.innerHTML = 'Less &#129049';
+      divForMore.style.color = '#f83b26';
+      divForMore.style.border = '2px solid #f83b26';
+    }
+  };
+
+  divForMore.addEventListener('click', () => {
+    speakerCards.forEach((speakerCard, index) => {
+      if (index > 1) {
+        speakerCard.classList.toggle('hide');
+        moreOrLess(speakerCard);
+      }
+    })
+  })
+
+}
+
+createMoreBtn()
