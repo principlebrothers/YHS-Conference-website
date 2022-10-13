@@ -27,7 +27,7 @@ const speakers = [
     personality: 'Elder of the Church of Pentecost',
     image: './img/Elder-Prince.png',
     alt: 'Prince',
-    description: 'He has great knowledge in family life and as he is an internationally aclaimed speaker',
+    description: 'He has great knowledge in family life and as he is an internationally acclaimed speaker',
   },
   {
     class: 'justice-img',
