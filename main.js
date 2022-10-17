@@ -27,7 +27,7 @@ const speakers = [
     personality: 'Elder of the Church of Pentecost',
     image: './img/Elder-Prince.png',
     alt: 'Prince',
-    description: 'He has great knowledge in family life and as he is an internationally acclaimed speaker',
+    description: 'He has great knowledge in family life and he is an internationally acclaimed speaker',
   },
   {
     class: 'justice-img',
@@ -59,7 +59,7 @@ const speakers = [
     personality: 'Pastor of Christ Embassy, a Counsellor and an Author',
     image: './img/Pastor-Chris.jpg',
     alt: 'Chris',
-    description: 'Pastor\'s ministry holds meetings in the United Kingdom, the United States,Ghana and South Africa, and has "healing school" sessions in South Africa, Lagos and Canada.',
+    description: 'Pastor\'s ministry holds meetings in the United Kingdom, the United States, Ghana and South Africa, and has "healing school" sessions in South Africa, Lagos and Canada.',
   },
 ];
 
